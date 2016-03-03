@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	
+	function selectAll(){
+		
+		var s = document.getElementsByTagName("input");
+		if(document.getElementById("controlAll").checked){
+			for(var i = 0; i<s.length;i++){
+				s[i].checked = 1;
+			}
+		}
+		else{
+			  for(var j=0;j<s.length;j++)
+			  {
+			     s[j].checked = 0;
+			  }
+			 }
+	}
+	
+	function smile(){
+		alert("哈哈哈哈");
+		
+	}
+
+</script>
+</head>
+<body>
+<form >
+	
+	<tr>
+		<td>
+		<input onclick="selectAll()" type="checkbox"  style="" id="controlAll"/>全选<br>
+		</td>
+		<td><input type="checkbox" id="1" value="name">1</td>
+	
+	</tr><br>
+	<tr>
+		<td><input type="checkbox" id="1" value="name">2</td>
+	
+	</tr><br>
+	<tr>
+		<td><input type="checkbox" id="1" value="name">3</td>
+		
+	</tr><br>
+	<tr>
+		<td><input type="checkbox" id="1" value="name">4</td>
+		
+	</tr><br>
+	<tr>
+	<h1>喜元你是猪吗？</h1>
+	</tr>
+	<tr>
+		<button onclick="smile()" >是</button>
+	</tr>
+
+
+
+
+
+
+</body>
+
+</html>
